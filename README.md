@@ -11,3 +11,6 @@ My configs for some of the apps I use
 ### terminales
 - ghostty (MacOS)
 - kitty (linux)
+
+### composiotres
+- picom (linux with X11)
