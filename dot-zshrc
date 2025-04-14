@@ -1,0 +1,34 @@
+# external apps
+eval "$(starship init zsh)"
+source <(fzf --zsh)
+eval "$(zoxide init --cmd cd zsh)"
+
+# alias
+## miscs
+alias n="nvim"
+alias s="source"
+alias ss="source ~/.zshrc"
+alias c="clear"
+
+## homebrew
+alias buu="brew update && brew upgrade"
+alias bu="brew update"
+alias bi="brew install"
+alias bin="brew info"
+alias bs="brew search"
+alias br="brew remove"
+
+## git
+alias g="git"
+alias gi="git init"
+alias ga="git add"
+alias gs="git status"
+alias gl="git log"
+alias gc="git commit"
+
+## zig
+alias zi="zig init"
+alias zb="zig build"
+alias zbr="zig build run"
+alias zr="zig run"
+alias zt="zig test"
