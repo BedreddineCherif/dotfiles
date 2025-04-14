@@ -1,0 +1,8 @@
+theme = rose-pine
+font-size = 24
+
+window-decoration = false
+
+macos-titlebar-style = hidden
+
+fullscreen = true

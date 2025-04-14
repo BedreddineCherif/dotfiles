@@ -7,3 +7,6 @@ My configs for some of the apps I use
 
 ### editores
 - neovim
+
+### terminales
+- ghostty (MacOS)
