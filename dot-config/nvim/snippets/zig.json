@@ -1,0 +1,18 @@
+{
+    "std": {
+        "prefix": "st",
+        "body": "const std = @import(\"std\");"
+    },
+    "import": {
+        "prefix": "sim",
+        "body": "const $1 = std.$0;"
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "pub fn main() !void{",
+            "\t$0",
+            "}"
+        ]
+    }
+}

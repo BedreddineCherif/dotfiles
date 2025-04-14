@@ -1,0 +1,60 @@
+{
+    "include": {
+        "prefix": "#inc",
+        "body": "#include <$0>"
+    },
+  "for": {
+    "prefix":"for",
+    "body": [
+      "for($1;$2;$3){",
+      "\t$0",
+      "}"
+    ]
+  },
+    "while":{
+        "prefix": "while",
+        "body": [
+            "while($1){",
+            "\t$0",
+            "}"
+        ]
+    },
+    "function":{
+        "prefix": "fn",
+        "body": [
+            "${1} ${2}(${3}){",
+            "\t$0",
+            "}"
+        ]
+    },
+    "typedef":{
+        "prefix": "typedef",
+        "body": "typedef $1 $0;"
+    },
+    "struct":{
+        "prefix": "struct",
+        "body": "struct $1 {$0}"
+    },
+    "typedef struct":{
+        "prefix": "typedef struct",
+        "body": "typedef struct $1 {$2} $0;"
+    },
+    "main":{
+        "prefix":"main",
+        "body": [
+            "int main($1){",
+            "\t$0",
+            "}"
+        ]
+    },
+    "hello":{
+        "prefix": "hello",
+        "body": [
+            "#include <stdio.h>",
+            "int main(){$0",
+            "\tprintf(\"Hello, world!\\n\");",
+            "\treturn 0;",
+            "}"
+        ]
+    }
+}
